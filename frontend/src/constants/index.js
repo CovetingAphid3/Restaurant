@@ -44,27 +44,27 @@ export const socialMedia = [
 ];
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Discover",
     links: [
       {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
+        name: "Menu",
+        link: "https://www.deliciousbites.com/menu/",
       },
       {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
+        name: "Specials",
+        link: "https://www.deliciousbites.com/specials/",
       },
       {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
+        name: "Reservations",
+        link: "https://www.deliciousbites.com/reservations/",
       },
       {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
+        name: "Events",
+        link: "https://www.deliciousbites.com/events/",
       },
       {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        name: "Gift Cards",
+        link: "https://www.deliciousbites.com/gift-cards/",
       },
     ],
   },
@@ -72,38 +72,39 @@ export const footerLinks = [
     title: "Community",
     links: [
       {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
+        name: "Feedback",
+        link: "https://www.deliciousbites.com/feedback/",
       },
       {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
+        name: "Our Story",
+        link: "https://www.deliciousbites.com/our-story/",
       },
       {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
+        name: "Join Us",
+        link: "https://www.deliciousbites.com/join-us/",
       },
       {
         name: "Blog",
-        link: "https://www.hoobank.com/blog/",
+        link: "https://www.deliciousbites.com/blog/",
       },
       {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
+        name: "Newsletter",
+        link: "https://www.deliciousbites.com/newsletter/",
       },
     ],
   },
   {
-    title: "Partner",
+    title: "Partners",
     links: [
       {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
+        name: "Our Suppliers",
+        link: "https://www.deliciousbites.com/our-suppliers/",
       },
       {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        name: "Become a Supplier",
+        link: "https://www.deliciousbites.com/become-a-supplier/",
       },
     ],
   },
 ];
+
