@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-gray-900 text-white">
+  <nav class="bg-gray-900 text-white sticky top-0 z-50 shadow-lg">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
 
       <!-- Logo and Title Section -->
@@ -17,17 +17,14 @@
 
       <!-- Navigation Links -->
       <ul class="hidden md:flex space-x-8">
-        <li>
-          <a href="#home" class="hover:text-red-600 transition duration-300">Home</a>
-        </li>
-        <li>
-          <a href="#menu" class="hover:text-red-600 transition duration-300">Menu</a>
-        </li>
-        <li>
-          <a href="#about" class="hover:text-red-600 transition duration-300">About Us</a>
-        </li>
-        <li>
-          <a href="#contact" class="hover:text-red-600 transition duration-300">Contact</a>
+        <li v-for="item in navItems" :key="item.name">
+          <RouterLink
+            :to="item.to"
+            :class="[
+              item.current ? 'text-red-600' : 'hover:text-red-600',
+              'transition duration-300'
+            ]"
+          >{{ item.name }}</RouterLink>
         </li>
       </ul>
 
@@ -50,10 +47,15 @@
     <!-- Mobile Menu -->
     <div v-if="isMenuOpen" class="md:hidden bg-gray-800 text-white">
       <ul class="space-y-4 p-4">
-        <li><a href="#home" class="block text-red-400">Home</a></li>
-        <li><a href="#menu" class="block text-red-400">Menu</a></li>
-        <li><a href="#about" class="block text-red-400">About Us</a></li>
-        <li><a href="#contact" class="block text-red-400">Contact</a></li>
+        <li v-for="item in navItems" :key="item.name">
+          <RouterLink
+            :to="item.to"
+            :class="[
+              item.current ? 'text-red-400' : 'text-red-400',
+              'block'
+            ]"
+          >{{ item.name }}</RouterLink>
+        </li>
         <li>
           <a href="#" class="block bg-red-500 text-black px-4 py-2 mt-2 rounded-lg text-center">Order Now</a>
         </li>
@@ -66,19 +68,34 @@
 </template>
 
 <script>
+import { computed } from 'vue';
+import { RouterLink, useRoute } from 'vue-router';
+
 export default {
   name: 'Navbar',
+  setup() {
+    const route = useRoute();
+
+    const navItems = computed(() => [
+      { name: 'Home', to: '/', current: route.path === '/' },
+      { name: 'Menu', to: '/menu', current: route.path === '/menu' },
+      { name: 'About Us', to: '/about', current: route.path === '/about' },
+      { name: 'Contact', to: '/contact', current: route.path === '/contact' },
+    ]);
+
+    return { navItems };
+  },
   data() {
     return {
       isMenuOpen: false,
-    }
+    };
   },
   methods: {
     toggleMenu() {
-      this.isMenuOpen = !this.isMenuOpen
+      this.isMenuOpen = !this.isMenuOpen;
     },
   },
-}
+};
 </script>
 
 <style scoped>
