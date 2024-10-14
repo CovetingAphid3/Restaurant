@@ -1,5 +1,4 @@
 
-```markdown
 # Royal Burger Website
 
 Welcome to the Royal Burger website! This project serves as a proof of concept for a modern, user-friendly burger restaurant website. The site showcases the restaurant's offerings, emphasizes quality and customer satisfaction, and provides an engaging user experience.
