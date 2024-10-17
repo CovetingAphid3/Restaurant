@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import LandingPage from '../views/HomeView.vue'
 import Menu from '../views/Menu.vue'
 import Contact from '../views/Contact.vue'
 import OrderPage from '../views/OrderPage.vue'
@@ -10,8 +10,8 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView,
+      name: 'LandingPage',
+      component: LandingPage,
     },
     {
       path: '/menu',

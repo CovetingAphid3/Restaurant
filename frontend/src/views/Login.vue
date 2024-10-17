@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-gray-100 to-red-100 py-12 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+  <div class="min-h-screen bg-gradient-to-br from-gray-100 to-red-100 py-12 px-4 sm:px-6 lg:px-8 flex items-center justify-center" style="background-image: url('/assets/background.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
     <div class="max-w-md w-full space-y-8 bg-white p-10 rounded-xl shadow-2xl">
       <div>
         <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">Welcome to Burger Palace</h2>

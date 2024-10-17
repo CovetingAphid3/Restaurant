@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen flex justify-center items-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8"  style="background-image: url('/assets/about.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="min-h-screen flex justify-center items-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8"  style="background-image: url('/assets/background.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
 
     <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
       <div class="md:flex">

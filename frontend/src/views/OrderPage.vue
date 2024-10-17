@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-gray-100 to-red-100 py-12 px-4 sm:px-6 lg:px-8">
+  <div class="min-h-screen bg-gradient-to-br from-gray-100 to-red-100 py-12 px-4 sm:px-6 lg:px-8" style="background-image: url('/assets/background.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
     <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
       <div class="md:flex">
         <div class="md:flex-shrink-0 bg-gray-600 md:w-56 flex flex-col justify-between">
