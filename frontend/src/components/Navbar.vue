@@ -30,8 +30,10 @@
 
       <!-- Action Buttons -->
       <div class="hidden md:flex space-x-4">
-        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-500 transition duration-300">Order Now</a>
-        <a href="#" class="bg-green-600 px-4 py-2 rounded-lg hover:bg-white hover:text-green-600 transition duration-300">Login</a>
+
+
+        <RouterLink :to="'/order'" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-500 transition duration-300">Order Now</RouterLink>
+        <RouterLink :to="'/login'" class="bg-green-600 px-4 py-2 rounded-lg hover:bg-white hover:text-green-600 transition duration-300">Login</RouterLink>
       </div>
 
       <!-- Mobile Menu Toggle -->

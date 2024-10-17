@@ -83,29 +83,6 @@
       </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-gray-900 text-white py-8">
-      <div class="container mx-auto px-4 text-center">
-        <p>&copy; 2024 Royal Burger. All rights reserved.</p>
-        <div class="flex justify-center mt-4">
-          <RouterLink to="/about" class="mx-4 hover:text-yellow-400">About Us</RouterLink>
-          <RouterLink to="/menu" class="mx-4 hover:text-yellow-400">Menu</RouterLink>
-          <RouterLink to="/contact" class="mx-4 hover:text-yellow-400">Contact</RouterLink>
-        </div>
-        <div class="flex justify-center mt-4">
-          <a href="https://facebook.com" class="mx-2 hover:text-yellow-400" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="https://instagram.com" class="mx-2 hover:text-yellow-400" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://twitter.com" class="mx-2 hover:text-yellow-400" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </div>
-      </div>
-    </footer>
-
   </div>
 </template>
 
