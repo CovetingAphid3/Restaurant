@@ -1,92 +1,94 @@
 <template>
-  <div class="font-sans bg-gray-100">
+  <div class="font-roboto " style="background-image: url('/assets/background.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
 
     <!-- Menu Header -->
-    <header class="bg-gray-800 text-white py-20 text-center">
-      <h1 class="text-5xl font-extrabold mb-4">Our Royal Menu</h1>
-      <p class="text-xl">Delicious creations fit for royalty</p>
+    <header class="bg-gradient-to-b from-red-900 to-black text-white py-16 text-center relative overflow-hidden">
+      <div class="absolute inset-0 "></div>
+      <div class="relative z-10">
+        <h1 class="text-6xl font-extrabold mb-4 text-white shadow-text">Our Royal Menu</h1>
+        <p class="text-2xl italic">Delicious creations fit for royalty</p>
+      </div>
     </header>
 
     <!-- Menu Categories -->
-    <section class="container mx-auto px-4 py-12">
-      <div class="flex justify-center space-x-4 mb-12">
+    <section class="container mx-auto px-4 py-16">
+      <div class="flex justify-center flex-wrap gap-4 mb-12">
         <button
           v-for="category in categories"
           :key="category"
           @click="selectedCategory = category"
-          :class="['px-6 py-2 rounded-full font-bold transition duration-300',
-                   selectedCategory === category ? 'bg-yellow-400 text-red-900' : 'bg-red-900 text-white hover:bg-red-800']"
+          :class="['px-6 py-3 rounded-full font-bold transition duration-300 transform hover:scale-105',
+                   selectedCategory === category ? 'bg-yellow-400 text-red-900 shadow-lg' : 'bg-red-900 text-white hover:bg-red-800']"
         >
           {{ category }}
         </button>
       </div>
 
       <!-- Menu Items -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <div
           v-for="item in filteredMenuItems"
           :key="item.id"
-          class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105"
+          class="bg-white rounded-lg shadow-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl"
         >
           <img :src="item.image" :alt="item.name" class="w-full h-64 object-cover" />
           <div class="p-6">
-            <h3 class="text-2xl font-bold mb-2">{{ item.name }}</h3>
+            <h3 class="text-2xl font-bold mb-2 text-red-800">{{ item.name }}</h3>
             <p class="text-gray-600 mb-4">{{ item.description }}</p>
             <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-red-600">R{{ item.price.toFixed(2) }}</span>
-              <button class="bg-yellow-400 text-red-900 px-4 py-2 rounded-full font-bold hover:bg-yellow-500 transition duration-300">Add to Cart</button>
+              <span class="text-2xl font-bold text-yellow-500">R{{ item.price.toFixed(2) }}</span>
+              <button class="bg-red-900 text-white px-6 py-2 rounded-full font-bold hover:bg-red-800 transition duration-300 transform hover:scale-105">
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Special Dietary Requirements -->
-    <section class="bg-gray-800 text-white py-12">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-8">Special Dietary Requirements</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="text-center">
-            <i class="fas fa-leaf text-4xl mb-4"></i>
-            <h3 class="text-xl font-bold mb-2">Vegetarian Options</h3>
-            <p>We offer a variety of delicious vegetarian burgers and sides.</p>
-          </div>
-          <div class="text-center">
-            <i class="fas fa-wheat-awn-circle-exclamation text-4xl mb-4"></i>
-            <h3 class="text-xl font-bold mb-2">Gluten-Free Buns</h3>
-            <p>Gluten-free bun options available for all our burgers.</p>
-          </div>
-          <div class="text-center">
-            <i class="fas fa-carrot text-4xl mb-4"></i>
-            <h3 class="text-xl font-bold mb-2">Vegan Choices</h3>
-            <p>Try our plant-based burgers and vegan-friendly sides.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Customization Options -->
-    <section class="container mx-auto px-4 py-12">
-      <h2 class="text-3xl font-bold text-center mb-8">Customize Your Burger</h2>
+    <section class="container mx-auto px-4 py-16 bg-gray-900 bg-opacity-80 rounded-lg shadow-2xl my-16">
+      <h2 class="text-5xl text-yellow-400 font-bold text-center mb-12 shadow-text">Customize Your Burger</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div v-for="(options, category) in customizationOptions" :key="category" class="bg-white rounded-lg shadow-lg p-6">
-          <h3 class="text-xl font-bold mb-4">{{ category }}</h3>
-          <ul class="space-y-2">
-            <li v-for="option in options" :key="option.name" class="flex justify-between items-center">
-              <span>{{ option.name }}</span>
-              <span class="text-red-600 font-bold">R{{ option.price.toFixed(2) }}</span>
+        <div v-for="(options, category) in customizationOptions" :key="category" class="bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105">
+          <h3 class="text-2xl font-bold mb-4 text-red-800">{{ category }}</h3>
+          <ul class="space-y-3">
+            <li v-for="option in options" :key="option.name" class="flex justify-between items-center border-b border-gray-200 pb-2">
+              <span class="text-gray-800">{{ option.name }}</span>
+              <span class="text-yellow-500 font-bold">R{{ option.price.toFixed(2) }}</span>
             </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
-      <!-- (Include your footer content here) -->
-    </footer>
+    <!-- Special Dietary Requirements -->
+    <section class="bg-gradient-to-b from-red-900 to-black text-white py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12 text-white shadow-text">Special Dietary Requirements</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div class="text-center bg-white bg-opacity-10 p-8 rounded-lg transform transition duration-300 hover:scale-105">
+            <i class="fas fa-leaf text-5xl mb-6 text-yellow-300"></i>
+            <h3 class="text-2xl font-bold mb-4">Vegetarian Options</h3>
+            <p class="text-lg">We offer a variety of delicious vegetarian burgers and sides.</p>
+          </div>
+          <div class="text-center bg-white bg-opacity-10 p-8 rounded-lg transform transition duration-300 hover:scale-105">
+            <i class="fas fa-wheat-awn-circle-exclamation text-5xl mb-6 text-yellow-300"></i>
+            <h3 class="text-2xl font-bold mb-4">Gluten-Free Buns</h3>
+            <p class="text-lg">Gluten-free bun options available for all our burgers.</p>
+          </div>
+          <div class="text-center bg-white bg-opacity-10 p-8 rounded-lg transform transition duration-300 hover:scale-105">
+            <i class="fas fa-carrot text-5xl mb-6 text-yellow-300"></i>
+            <h3 class="text-2xl font-bold mb-4">Vegan Choices</h3>
+            <p class="text-lg">Try our plant-based burgers and vegan-friendly sides.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
 </template>
+
 
 
 <script>

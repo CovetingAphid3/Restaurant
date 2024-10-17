@@ -1,11 +1,11 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-orange-100 to-red-100 py-12 px-4 sm:px-6 lg:px-8">
+  <div class="min-h-screen bg-gradient-to-br from-gray-100 to-red-100 py-12 px-4 sm:px-6 lg:px-8">
     <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
       <div class="md:flex">
-        <div class="md:flex-shrink-0 bg-orange-600 md:w-56 flex flex-col justify-between">
+        <div class="md:flex-shrink-0 bg-gray-600 md:w-56 flex flex-col justify-between">
           <div class="p-6">
             <div class="text-white font-bold text-3xl mb-2">Burger Palace</div>
-            <p class="text-orange-200 text-sm">Savor the flavor, one bite at a time!</p>
+            <p class="text-gray-200 text-sm">Savor the flavor, one bite at a time!</p>
           </div>
           <img class="h-48 w-full object-cover md:h-full md:w-56" src="/assets/burger.jpg" alt="Juicy burger">
         </div>
@@ -22,7 +22,7 @@
                 </div>
                 <div class="flex items-center">
                   <span class="text-lg font-semibold text-gray-900 mr-4">R{{ item.price.toFixed(2) }}</span>
-                  <button @click="addToOrder(item)" class="bg-orange-500 text-white px-3 py-1 rounded-full hover:bg-orange-600 transition duration-300 ease-in-out">
+                  <button @click="addToOrder(item)" class="bg-gray-500 text-white px-3 py-1 rounded-full hover:bg-gray-600 transition duration-300 ease-in-out">
                     Add
                   </button>
                 </div>

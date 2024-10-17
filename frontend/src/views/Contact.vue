@@ -1,119 +1,76 @@
 <template>
-  <div class="font-sans bg-gray-100">
-
-    <!-- Contact Header -->
-    <header class="bg-gray-800 text-white py-20 text-center">
-      <h1 class="text-5xl font-extrabold mb-4">Contact Us</h1>
-      <p class="text-xl">We'd love to hear from you!</p>
-    </header>
-
-    <!-- Main Content -->
-    <main class="container mx-auto px-4 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <!-- Contact Information -->
-        <div>
-          <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
-          <div class="space-y-4">
-            <div class="flex items-center">
-              <i class="fas fa-map-marker-alt text-red-600 text-2xl mr-4"></i>
-              <p>123 Burger Street, Foodville, FB 12345</p>
-            </div>
-            <div class="flex items-center">
-              <i class="fas fa-phone text-red-600 text-2xl mr-4"></i>
-              <p>(555) 123-4567</p>
-            </div>
-            <div class="flex items-center">
-              <i class="fas fa-envelope text-red-600 text-2xl mr-4"></i>
-              <p>info@royalburger.com</p>
-            </div>
-          </div>
-
-          <h3 class="text-2xl font-bold mt-8 mb-4">Opening Hours</h3>
-          <ul class="space-y-2">
-            <li><span class="font-bold">Monday - Thursday:</span> 11:00 AM - 10:00 PM</li>
-            <li><span class="font-bold">Friday - Saturday:</span> 11:00 AM - 11:00 PM</li>
-            <li><span class="font-bold">Sunday:</span> 12:00 PM - 9:00 PM</li>
-          </ul>
-
-          <h3 class="text-2xl font-bold mt-8 mb-4">Follow Us</h3>
-          <div class="flex space-x-4">
-            <a href="#" class="text-red-600 hover:text-red-800 transition duration-300">
-              <i class="fab fa-facebook-square text-3xl"></i>
-            </a>
-            <a href="#" class="text-red-600 hover:text-red-800 transition duration-300">
-              <i class="fab fa-instagram-square text-3xl"></i>
-            </a>
-            <a href="#" class="text-red-600 hover:text-red-800 transition duration-300">
-              <i class="fab fa-twitter-square text-3xl"></i>
-            </a>
+  <div class="min-h-screen flex justify-center items-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8"  style="background-image: url('/assets/about.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
+      <div class="md:flex">
+        <div class="md:flex-shrink-0 bg-gray-600 md:w-56">
+          <div class="h-full flex items-center justify-center p-6">
+            <h2 class="text-3xl font-bold text-white text-center">Get in Touch</h2>
           </div>
         </div>
+        <div class="p-8 w-full">
+          <h1 class="text-3xl font-extrabold text-gray-900 mb-6">Contact Burger Palace</h1>
 
-        <!-- Contact Form -->
-        <div>
-          <h2 class="text-3xl font-bold mb-6">Send Us a Message</h2>
-          <form @submit.prevent="submitForm" class="space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <label for="name" class="block mb-1 font-bold">Name</label>
-              <input
-                type="text"
-                id="name"
-                v-model="form.name"
-                required
-                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-              >
+              <h3 class="text-lg font-medium text-gray-900 mb-4">Contact Information</h3>
+              <div class="space-y-4">
+                <div class="flex items-center text-gray-600">
+                  <svg class="flex-shrink-0 h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span class="ml-2">123 Burger Street, Foodville, FL 12345</span>
+                </div>
+                <div class="flex items-center text-gray-600">
+                  <svg class="flex-shrink-0 h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  <span class="ml-2">(555) 123-4567</span>
+                </div>
+                <div class="flex items-center text-gray-600">
+                  <svg class="flex-shrink-0 h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <span class="ml-2">info@burgerpalace.com</span>
+                </div>
+              </div>
+
+              <h3 class="text-lg font-medium text-gray-900 mt-8 mb-4">Hours of Operation</h3>
+              <div class="space-y-2 text-gray-600">
+                <p>Monday - Thursday: 11:00 AM - 9:00 PM</p>
+                <p>Friday - Saturday: 11:00 AM - 11:00 PM</p>
+                <p>Sunday: 12:00 PM - 8:00 PM</p>
+              </div>
             </div>
+
             <div>
-              <label for="email" class="block mb-1 font-bold">Email</label>
-              <input
-                type="email"
-                id="email"
-                v-model="form.email"
-                required
-                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-              >
+              <h3 class="text-lg font-medium text-gray-900 mb-4">Send us a Message</h3>
+              <form @submit.prevent="handleSubmit" class="space-y-4">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                  <input type="text" id="name" v-model="form.name" required
+                         class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500">
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                  <input type="email" id="email" v-model="form.email" required
+                         class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500">
+                </div>
+                <div>
+                  <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                  <textarea id="message" v-model="form.message" rows="4" required
+                            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500"></textarea>
+                </div>
+                <button type="submit"
+                        class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                  Send Message
+                </button>
+              </form>
             </div>
-            <div>
-              <label for="subject" class="block mb-1 font-bold">Subject</label>
-              <input
-                type="text"
-                id="subject"
-                v-model="form.subject"
-                required
-                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-              >
-            </div>
-            <div>
-              <label for="message" class="block mb-1 font-bold">Message</label>
-              <textarea
-                id="message"
-                v-model="form.message"
-                required
-                rows="5"
-                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              class="bg-red-600 text-white px-6 py-3 rounded-md font-bold hover:bg-red-700 transition duration-300"
-            >
-              Send Message
-            </button>
-          </form>
+          </div>
         </div>
       </div>
-    </main>
-
-    <!-- Map Section -->
-    <section class="py-12 bg-white">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-8">Find Us</h2>
-        <div class="aspect-w-16 aspect-h-9">
-          <img src="/assets/map.png" alt="Map" class="w-full h-full border border-black object-cover rounded-lg shadow-lg">
-        </div>
-      </div>
-    </section>
-
+    </div>
   </div>
 </template>
 
@@ -125,29 +82,19 @@ export default {
       form: {
         name: '',
         email: '',
-        subject: '',
         message: ''
       }
     }
   },
   methods: {
-    submitForm() {
-      // Here you would typically send the form data to your backend
-      console.log('Form submitted:', this.form)
-      // Reset form after submission
-      this.form = {
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      }
-      // Show a success message to the user
-      alert('Thank you for your message. We will get back to you soon!')
+    handleSubmit() {
+      // Here you would typically handle the form submission
+      console.log('Form submitted:', this.form);
+      // For demonstration purposes, we'll just show an alert
+      alert(`Thank you for your message, ${this.form.name}! We'll get back to you soon.`);
+      // Reset form fields
+      this.form = { name: '', email: '', message: '' };
     }
   }
 }
 </script>
-
-<style scoped>
-/* Add any additional custom styles here */
-</style>
