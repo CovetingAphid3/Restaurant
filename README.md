@@ -1,7 +1,7 @@
 
 # Royal Burger Website
 
-Welcome to the Royal Burger website! This project serves as a proof of concept for a modern, user-friendly burger restaurant website. The site showcases the restaurant's offerings, emphasizes quality and customer satisfaction, and provides an engaging user experience.
+Welcome to the Burger Place website! This project serves as a proof of concept for a modern, user-friendly burger restaurant website. The site showcases the restaurant's offerings, emphasizes quality and customer satisfaction, and provides an engaging user experience.
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ Welcome to the Royal Burger website! This project serves as a proof of concept f
 
 - **Hero Section**: Captivating background image with a call-to-action button to explore the menu.
 - **Featured Burgers**: Dynamic display of the restaurant's best offerings, including images, descriptions, and pricing.
-- **About Us Section**: A brief story about Royal Burger, highlighting the brand's commitment to quality.
+- **About Us Section**: 
 - **Testimonials**: Customer reviews to build trust and social proof.
 - **Responsive Design**: The site is fully responsive, ensuring a seamless experience on all devices.
 - **Easy Navigation**: Intuitive navigation with RouterLink for smooth transitions between sections.
