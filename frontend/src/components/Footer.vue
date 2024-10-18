@@ -5,10 +5,10 @@
 
         <!-- About Section -->
         <div>
-          <h3 class="text-xl font-semibold text-white mb-4">Royal Burger</h3>
+          <h3 class="text-xl font-semibold text-white mb-4">Burger Place</h3>
           <p class="mb-4">Indulge in the art of handcrafted succulent burgers - elevating your taste buds to a royal experience!</p>
           <p class="text-sm">Selous Ave & Carters Rd, Kimberley, South Africa</p>
-          <p class="text-sm mt-1">Phone: <a href="tel:+0725298851" class="hover:text-yellow-400">072 529 8851</a></p>
+          <p class="text-sm mt-1">Phone: <a href="tel:+07252988510" class="hover:text-yellow-400">072 529 88510</a></p>
         </div>
 
         <!-- Quick Links -->
@@ -42,7 +42,7 @@
 
       <!-- Copyright Section -->
       <div class="text-center text-sm mt-8">
-        <p>&copy; 2024 Royal Burger. All rights reserved.</p>
+        <p>&copy; 2024 Burger Place. All rights reserved.</p>
       </div>
     </div>
   </footer>

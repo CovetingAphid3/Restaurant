@@ -53,11 +53,11 @@
       <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row items-center">
           <div class="md:w-1/2 mb-12 md:mb-0">
-            <img src="/assets/about.jpg" alt="About Royal Burger" class="rounded-lg shadow-2xl w-full h-96 object-cover" />
+            <img src="/assets/about.jpg" alt="About Burger Place" class="rounded-lg shadow-2xl w-full h-96 object-cover" />
           </div>
           <div class="md:w-1/2 md:pl-12">
             <h2 class="text-5xl font-bold mb-8 font-serif">Our Royal Story</h2>
-            <p class="text-lg mb-6 leading-relaxed">Royal Burger has been serving gourmet burgers made with the finest ingredients since 2010. Our passion for quality and flavor has made us a local favorite and a destination for burger enthusiasts.</p>
+            <p class="text-lg mb-6 leading-relaxed">Burger Place has been serving gourmet burgers made with the finest ingredients since 2010. Our passion for quality and flavor has made us a local favorite and a destination for burger enthusiasts.</p>
             <p class="text-xl italic mb-8 text-yellow-400">Our mission: To provide delicious, sustainable meals that bring joy to our community.</p>
             <RouterLink to="/about" class="inline-block bg-yellow-500 text-red-900 px-8 py-4 rounded-full text-xl font-bold hover:bg-yellow-400 transition duration-300 shadow-lg">Discover Our Journey</RouterLink>
           </div>
@@ -169,7 +169,7 @@ export default {
       {
         name: 'Mike R.',
         avatar: 'https://picsum.photos/seed/mike/64/64',
-        comment: 'The ambiance, the service, the food - Royal Burger is in a league of its own. A must-visit!'
+        comment: 'The ambiance, the service, the food - Burger Place is in a league of its own. A must-visit!'
       }
     ]
 

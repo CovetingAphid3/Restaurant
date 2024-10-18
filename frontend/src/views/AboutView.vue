@@ -5,7 +5,7 @@
       <div class="md:flex">
         <div class="md:flex-shrink-0 bg-gray-600 md:w-56">
           <div class="h-full flex items-center justify-center">
-            <img class="h-48 w-48 object-cover rounded-full border-4 border-white" src="/assets/logo.jpg" alt="Burger Palace logo">
+            <img class="h-48 w-48 object-cover rounded-full border-4 border-white" src="/assets/logo2.png" alt="Burger Palace logo">
           </div>
         </div>
         <div class="p-8">

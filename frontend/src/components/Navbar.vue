@@ -4,11 +4,11 @@
       <!-- Logo and Title Section -->
       <div class="flex items-center space-x-4">
         <img
-          src="/assets/logo.jpg"
-          alt="Royal Burger Logo"
+          src="/assets/logo2.png"
+          alt="Logo"
           class="w-12 h-12 rounded-full object-cover shadow-lg border-2 border-yellow-500"
         />
-        <a href="#" class="text-2xl font-bold text-yellow-500 hover:text-yellow-400 transition-colors duration-300">Royal Burger</a>
+        <a href="#" class="text-2xl font-bold text-yellow-500 hover:text-yellow-400 transition-colors duration-300">Burger Place</a>
       </div>
       <!-- Navigation Links -->
       <ul class="hidden lg:flex space-x-8">
